@@ -1,0 +1,26 @@
+{
+  "name": "bg-animation",
+  "version": "1.0.0",
+  "description": "backgorund dynamic compnents",
+  "main": "webpack.config.base.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "webpack --config webpack.config.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BuggMaker/BGAnimation.git"
+  },
+  "keywords": [
+    "dynamic",
+    "component"
+  ],
+  "author": "BuggMaker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BuggMaker/BGAnimation/issues"
+  },
+  "homepage": "https://github.com/BuggMaker/BGAnimation#readme"
+}
