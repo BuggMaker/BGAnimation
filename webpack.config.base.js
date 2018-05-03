@@ -7,21 +7,25 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
   mode: "production",
-  entry: path.resolve(__dirname, "./src/main.js"),
+  entry: {    
+    react:"./src/react/index.js",
+    vue:  "./src/vue/index.js"  
+  },
   //定义webpack输出的文件，我们在这里设置了
   //让打包后生成的文件放在dist文件夹下的build.js文件中
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "build.js"
+    filename: "[name].build.js"
   },
   module: {
     rules: [
       //转化ES6语法
       {
-        test: /\.js$/,
-        loader: "babel-loader",
-        // exclude: /node_modules/
-        include: [path.resolve("src"), path.resolve("node-modules/iview")]
+        test: /\.js|.jsx$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
       },
       //解析.vue文件
       {
@@ -43,19 +47,11 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin("./dist", {
-      exclude: ["styles.css",'build.js']
-    }),
-    new webpack.LoaderOptionsPlugin({
-      options: {
-        //这里用于安装babel，如果在根目录下的.babelrc配置了，这里就不写了
-        babel: {
-          presets: ["es2015", "stage-3"],
-          plugins: ["transform-runtime"]
-        }
-      }
+      exclude: ["styles.css"]
     })
   ],
   resolve: {
+    extensions: [".js", ".jsx", "json", ".css", ".vue"], //需要编译的文件类型
     alias: {
       vue$: "vue/dist/vue.common.js"
     }

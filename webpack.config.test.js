@@ -6,14 +6,14 @@ baseConfig.mode = "development";
 baseConfig.output.publicPath = "/dist/";
 baseConfig.devtool = "source-map";
 baseConfig.devServer = {
-  publicPath: "/dist/",
+  publicPath: "/test/",
   host: "localhost",
   port: "8055",
-  contentBase: "./dist",
+  contentBase: "./test",
   hot: true
 };
 baseConfig.module.rules.push({
-  test: /\.css$/,
+  test: /\.(less|css)$/,
   use: ["style-loader", "css-loader"]
 });
 baseConfig.plugins.push(
@@ -21,7 +21,7 @@ baseConfig.plugins.push(
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new WebpackDevOutput({
-      path: "./dist",
+      path: "./test/dist",
       isDel: false
     })
   ]

@@ -1,2 +1,2 @@
 ## BGAnimation
-#### Some background dynamic components.
+#### Some dynamic components can be used as background of your web.

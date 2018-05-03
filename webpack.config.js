@@ -17,8 +17,8 @@ baseConfig.module.rules.push(
 baseConfig.plugins.push(
   ...[
     // 模块分析可视化
-    new BundleAnalyzerPlugin(),
-    new ExtractTextPlugin("styles.css")
+    // new BundleAnalyzerPlugin(),
+    // new ExtractTextPlugin("[name].styles.css")
   ]
 );
 module.exports = baseConfig;
