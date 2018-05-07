@@ -1,4 +1,5 @@
 ## 动效组件
+一套可复用的基于React和Vue开发的动效组件.
 
 在网页中经常会见到效果酷炫的动态效果，如之前文章分享比较简单的[动态可交互“粒子-线”效果](https://www.jianshu.com/p/a6cd48e62e72)，如下图：
 ![](https://upload-images.jianshu.io/upload_images/7859404-0f4b728b361448e4.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/700)
