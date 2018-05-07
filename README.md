@@ -1,13 +1,13 @@
 ## 动效组件
 一套可复用的基于React和Vue开发的动效组件.
-
-在网页中经常会见到效果酷炫的动态效果，如之前文章分享比较简单的[动态可交互“粒子-线”效果](https://www.jianshu.com/p/a6cd48e62e72)，如下图：
+----
+在网页中经常会见到效果酷炫的动态效果，如下图：
 ![](https://upload-images.jianshu.io/upload_images/7859404-0f4b728b361448e4.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/700)
 网上也有比较多的教程，但是学习的最终成果，往往是各个独立的html文件，很难复用在其他项目中。
 ----
 而如今，前端开发讲究模块化以及组件化，所以便想通过一定方式将其封装为模块或者组件，方便在其他项目中调用。考虑到如今比较流行React与Vue组件开发， 所以本文主要分享如何将之前的动效以模块和React及Vue组件的形式实现。
 
-效果放前面，具体请戳[源码](https://github.com/BuggMaker/BGAnimation):
+效果放前面:
 ![‘粒子-线’组件化.gif](https://upload-images.jianshu.io/upload_images/7859404-e979133928d2b9ac.gif?imageMogr2/auto-orient/strip)
 
 ![热力图.gif](https://upload-images.jianshu.io/upload_images/7859404-455d9cf2a1164b79.gif?imageMogr2/auto-orient/strip)
