@@ -1,3 +1,3 @@
-import Particle from "./particle.vue";
+import Particle from "./Particle.vue";
 
 export { Particle };

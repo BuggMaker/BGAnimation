@@ -1,3 +1,3 @@
-import Particle from "./particle";
+import Particle from "./Particle";
 
 export { Particle };

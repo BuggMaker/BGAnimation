@@ -1,17 +1,16 @@
 import { PI, PI_2, distance, merage, defProp, random } from "../utils";
 import { Extent } from ".";
 
-
 /**
  * 粒子类
  */
 export default function Particle() {
   this.x = 0;
   this.y = 0;
-  this.radius = 5;
+  this.oldRadius = 0;
   this.style = {
     lineWidth: 1,
-    fillStyle: `hsla(${random(0, 360)},50%,30%,0.8)`
+    fillStyle: `hsla(${random(0, 360)},60%,50%,0.8)`
   };
   this.range = new Extent();
   this.vx = 1;
@@ -20,6 +19,12 @@ export default function Particle() {
 
   // 柯理化
   this.defProp = defProp(this);
+  // 半径
+  this.defProp("radius", 5, {
+    setter: nVal => {
+      if (this.oldRadius === 0) this.oldRadius = nVal;
+    }
+  });
   // 方向
   this.defProp("direction", 0, {
     setter: nVal => {

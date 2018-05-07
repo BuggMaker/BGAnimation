@@ -24,3 +24,4 @@ Extent.prototype.craash = function(x, y) {
     return 1;
   }
 };
+

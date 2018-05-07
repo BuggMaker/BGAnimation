@@ -14,7 +14,7 @@ export default class ParticleAnimation extends IAnimation {
     this.loop = this.loop.bind(this);
   }
   init() {
-    super.inite();
+    super.init();
     let oArray = this.oArray;
     for (let i = 0; i < this.number; i++) {
       let oPr = new Particle();

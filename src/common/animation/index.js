@@ -1,3 +1,4 @@
 import ParticleAnimation from "./ParticleAnimation";
-
-export { ParticleAnimation };
+import HeatmapAnimation from "./HeatmapAnimation";
+import MouseMovingBubbleAnimation from "./MouseMovingBubbleAnimation";
+export { ParticleAnimation, HeatmapAnimation, MouseMovingBubbleAnimation };
